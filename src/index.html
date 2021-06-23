@@ -30,5 +30,22 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/CSSRulePlugin.min.js" integrity="sha512-0bzaetZStCnsUgbCtGVxftzF/L32PNOnrMlYLXwBOKl8cUjTSSDfJVyyJsNwGoI0iE0WUqni2eEfO35kJjFj5g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="./main.js" ></script>
+    <script  >
+        const content = document.querySelector(".content span");
+        const tl = gsap.timeline();
+        const h1 = document.querySelector("h1");
+        const p = document.querySelector("p");
+        // tl.from(content, {cssRule:{scaleX:0}})
+        tl.to(content, { delay: 0.2, duration: 2, scaleX: "1" });
+        tl.to(h1, {
+          duration: 2,
+          clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
+          y: "30px",
+        });
+        tl.to(p, {
+          duration: 4,
+          clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
+          y: "30px",
+        });
+    </script>
 </html>
