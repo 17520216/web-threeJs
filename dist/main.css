@@ -162,6 +162,18 @@ section .webgl1 {
 .h2 p {
   font-size: 2rem;
 }
+
+@media only screen and (max-width: 600px) {
+  body .container .content h1 {
+    font-size: 2rem;
+  }
+  body .container .content p {
+    font-size: 1rem;
+  }
+  body .h2 {
+    font-size: 2rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */
 
 /*# sourceMappingURL=main.css.map*/
