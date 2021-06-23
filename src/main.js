@@ -1,4 +1,3 @@
-console.log("Testing");
 const content = document.querySelector(".content span");
 console.log("content", content);
 const tl = gsap.timeline();
