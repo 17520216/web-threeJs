@@ -37,7 +37,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 5rem;
   width: 100%;
   position: relative;
 }
@@ -173,6 +172,12 @@ section .webgl1 {
   }
   body .h2 {
     font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  body .container .content {
+    gap: 0rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
